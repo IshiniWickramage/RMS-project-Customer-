@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchCustomers, deleteCustomer ,fetchCustomer} from '../../redux/actions/customerActions';
+import { fetchCustomers, deleteCustomer, fetchCustomer } from '../../redux/actions/customerActions';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEllipsisH, faInfoCircle, faTrash } from '@fortawesome/free-solid-svg-icons';
 import Header from '../../components/Header';
 import LeftSideNavBar from '../../components/LeftSideNavBar';
-
 
 function CustomerList() {
   const dispatch = useDispatch();
@@ -16,11 +15,8 @@ function CustomerList() {
   const [searchValue, setSearchValue] = useState('');
 
   useEffect(() => {
-    // dispatch(fetchCustomers());
     dispatch(fetchCustomers());
-    console.log(
-      dispatch(fetchCustomers(customers)));
-  }, [dispatch ]);
+  }, [dispatch]);
 
   const toggleOptions = () => {
     setShowOptions(!showOptions);
@@ -30,8 +26,9 @@ function CustomerList() {
     const inputValue = e.target.value.toLowerCase();
     setSearchValue(inputValue);
 
-    setFilteredData(customers.filter((customer) => customer.fullName.toLowerCase().includes(inputValue)));
-    
+    if (customers && customers.length > 0) {
+      setFilteredData(customers.filter((customer) => customer.fullName && customer.fullName.toLowerCase().includes(inputValue)));
+    }
   };
 
   return (
@@ -69,7 +66,7 @@ function CustomerList() {
               </tr>
             </thead>
             <tbody>
-              {customers.map((d, i) => (
+              {(filteredData.length > 0 ? filteredData : customers).map((d, i) => (
                 <tr key={i} style={{ backgroundColor: 'white' }}>
                   <td>
                     <input type="checkbox" />
@@ -86,20 +83,18 @@ function CustomerList() {
                             dispatch(deleteCustomer(d.id));
                             dispatch(fetchCustomers());
                           }}
-                          
                         />
                       </div>
                     )}
                   </td>
                   <td>{d.id}</td>
-
                   <td>{d.fullName}</td>
                   <td>{d.identifier}</td>
                   <td>{d.address}</td>
                   <td>{d.email}</td>
                   <td>{d.contactNo}</td>
                 </tr>
-              ))} 
+              ))}
             </tbody>
           </table>
         </div>
