@@ -32,7 +32,8 @@ function CustomerOverview({ customer, updateCustomer, deleteCustomer, fetchCusto
   };
 
   const handleSave = () => {
-    updateCustomer(id, editedData);
+    const updatedData = { ...customer, ...editedData };
+    updateCustomer(id, updatedData);
     setIsEditing(false);
   };
 
@@ -149,7 +150,7 @@ function CustomerOverview({ customer, updateCustomer, deleteCustomer, fetchCusto
               <TextField
                 id="contactNo"
                 type="text"
-                value={isEditing ? editedData.contactNo  : customer?.contactNo || 'sssss'}
+                value={isEditing ? editedData.contactNo  : customer?.contactNo || ''}
                 disabled={!isEditing}
                 onChange={(e) => handleChange('contactNo', e.target.value)}
               />

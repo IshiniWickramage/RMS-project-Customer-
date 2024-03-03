@@ -1,4 +1,4 @@
-// customerActions.jsx
+
 
 export const fetchCustomers = () => async (dispatch) => {
   try {
