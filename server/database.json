@@ -1,0 +1,36 @@
+{
+  "customers": [
+    {
+      "identifier": "22222",
+      "id": "65f4"
+    },
+    {
+      "fullName": "yeaio",
+      "id": "321"
+    },
+    {
+      "id": "890",
+      "fullName": "TMPMT",
+      "identifier": "gfjghdj",
+      "address": "kolkata",
+      "email": "fgdsjh",
+      "contactNo": "232"
+    },
+    {
+      "identifier": "877989999",
+      "id": "102930"
+    },
+    {
+      "identifier": "124",
+      "id": "98908"
+    },
+    {
+      "fullName": "derry",
+      "id": "4312"
+    },
+    {
+      "address": "Colombo city centre",
+      "id": "8907"
+    }
+  ]
+}
