@@ -1,11 +1,6 @@
 {
   "customers": [
     {
-      "identifier": "22222",
-      "id": "65f4",
-      "fullName": "rerer"
-    },
-    {
       "id": "890",
       "fullName": "TMPMThennakoon",
       "identifier": "gfjghdj",
@@ -17,23 +12,6 @@
       "identifier": "877989999",
       "id": "102930",
       "fullName": "kiyara"
-    },
-    {
-      "identifier": "124",
-      "id": "98908",
-      "fullName": "dfdfff"
-    },
-    {
-      "identifier": "asdasd",
-      "id": "4312"
-    },
-    {
-      "id": "1213",
-      "fullName": "df",
-      "identifier": "fdf",
-      "address": "dsf",
-      "email": "dfdfefwfee",
-      "contactNo": "1231231"
     },
     {
       "id": "123",
@@ -50,6 +28,46 @@
       "address": "dfdfffe",
       "email": "sdaff",
       "contactNo": "322131"
+    },
+    {
+      "id": "7890",
+      "fullName": "John",
+      "identifier": "123",
+      "address": "England",
+      "email": "wewrw",
+      "contactNo": "2313123"
+    },
+    {
+      "id": "",
+      "fullName": "",
+      "identifier": "",
+      "address": "",
+      "email": "",
+      "contactNo": ""
+    },
+    {
+      "id": "123312",
+      "fullName": "Harry",
+      "identifier": "ew",
+      "address": "qew",
+      "email": "weqr",
+      "contactNo": "3123"
+    },
+    {
+      "id": "1232312",
+      "fullName": "densi",
+      "identifier": "21",
+      "address": "asew",
+      "email": "adf@gmail.com",
+      "contactNo": "sda"
+    },
+    {
+      "id": "231",
+      "fullName": "miyara",
+      "identifier": "sadd",
+      "address": "sd",
+      "email": "miyara@hotmail.com",
+      "contactNo": "2"
     }
   ]
 }

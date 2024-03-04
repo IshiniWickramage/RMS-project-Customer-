@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { createCustomer } from '../../redux/actions/customerActions';
 import Header from '../../components/Header';
 import LeftSideNavBar from '../../components/LeftSideNavBar';
 import TextField from '../../components/TextField';
 
-function CustomerCreation({ createCustomer }) {
+const CustomerCreation = ({ createCustomer }) => {
   const navigate = useNavigate();
 
   const [id, setName] = useState('');
@@ -16,8 +16,28 @@ function CustomerCreation({ createCustomer }) {
   const [email, setEmail] = useState('');
   const [contactNo, setContactNo] = useState('');
 
+  const isValidEmail = (value) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return !value || emailRegex.test(value);
+  };
+
   const handleSubmit = async (event) => {
     event.preventDefault();
+
+    if (!id || !fullName || !identifier || !address || !contactNo) {
+      alert("All fields marked with * are mandatory");
+      return;
+    }
+
+    if (id.length > 8 || fullName.length > 50 || identifier.length > 20 || contactNo.length > 15) {
+      alert("Please make sure you have entered the correct number of characters in each field.");
+      return;
+    }
+
+    if (!isValidEmail(email)) {
+      alert("Please enter a valid email address.");
+      return;
+    }
 
     const newCustomer = {
       id,
@@ -30,10 +50,9 @@ function CustomerCreation({ createCustomer }) {
 
     try {
       await createCustomer(newCustomer);
-      navigate('/'); // Redirect to customer list page after successful creation
+      navigate('/');
     } catch (error) {
       console.error('Error creating customer:', error);
-      // Handle error here
     }
   };
 
@@ -105,6 +124,6 @@ function CustomerCreation({ createCustomer }) {
       </div>
     </div>
   );
-}
+};
 
 export default connect(null, { createCustomer })(CustomerCreation);
