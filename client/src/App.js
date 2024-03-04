@@ -2,10 +2,10 @@ import React from "react";
 import {BrowserRouter,Routes, Route} from "react-router-dom";
 import CustomerCreation from "./pages/Customer/CustomerCreation";
 import CustomerList from "./pages/Customer/CustomerList";
-import CustomerOverview from "./pages/Customer/CustomerOverview";
-import CustomerOverviewSecond from "./pages/Customer/CustomerOverviewSecond";
-import CustomerOverviewThird from "./pages/Customer/CustomerOverviewThird";
+import CustomerOverviewHistory from "./pages/Customer/CustomerOverviewHistory";
 import "bootstrap/dist/css/bootstrap.min.css";
+import CustomerOverviewGenaral from "./pages/Customer/CustomerOverviewGenaral";
+import CustomerOverviewSecondTab from "./pages/Customer/CustomerOverviewSecondTab";
 
 
 
@@ -17,9 +17,9 @@ function App() {
 <Routes>
   <Route path="/" element={<CustomerList />}></Route>
   <Route path="/CustomerCreation" element={<CustomerCreation/>}></Route>
-  <Route path="/CustomerOverview/:id" element={<CustomerOverview/>}></Route>
-  <Route path="/CustomerOverviewSecond" element={<CustomerOverviewSecond/>}></Route>
-  <Route path="/CustomerOverviewThird" element={<CustomerOverviewThird/>}></Route>
+  <Route path="/CustomerOverviewGeneral/:id" element={<CustomerOverviewGenaral/>}></Route>
+  <Route path="/CustomerOverviewSecondTab" element={<CustomerOverviewSecondTab/>}></Route>
+  <Route path="/CustomerOverviewHistory" element={<CustomerOverviewHistory/>}></Route>
 </Routes>
 </BrowserRouter>
     );
