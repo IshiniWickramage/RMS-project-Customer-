@@ -1,17 +1,10 @@
 {
   "customers": [
     {
-      "id": "890",
-      "fullName": "TMPMT",
-      "identifier": "gfjghdj",
-      "address": "kolkata",
-      "email": "fgdsjh",
-      "contactNo": "232"
-    },
-    {
       "identifier": "877989999",
       "id": "102930",
-      "fullName": "kiyara"
+      "fullName": "kiyara",
+      "address": "dgfhgfhgj"
     },
     {
       "id": "123",
@@ -54,20 +47,20 @@
       "contactNo": "3123"
     },
     {
-      "id": "1232312",
-      "fullName": "densi",
-      "identifier": "21",
-      "address": "asew",
-      "email": "adf@gmail.com",
-      "contactNo": "sda"
-    },
-    {
       "id": "231",
       "fullName": "miyara",
-      "identifier": "sadd",
+      "identifier": "jh",
       "address": "sd",
       "email": "miyara@hotmail.com",
       "contactNo": "2"
+    },
+    {
+      "id": "gfghj",
+      "fullName": "gjh",
+      "identifier": "213",
+      "address": "gfhg",
+      "email": "gfjh@gmail.com",
+      "contactNo": "gfhj"
     }
   ]
 }
