@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate, Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { connect } from "react-redux";
 import { createCustomer } from "../../redux/actions/customerActions";
 import Header from "../../components/Header";
@@ -146,6 +146,7 @@ const CustomerCreation = ({ createCustomer }) => {
             type="text"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
+            maxLength={50}
           />
 
           <TextField
