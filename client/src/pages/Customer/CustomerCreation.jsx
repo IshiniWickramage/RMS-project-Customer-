@@ -1,5 +1,7 @@
+// CustomerCreation.js
+
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { connect } from "react-redux";
 import { createCustomer } from "../../redux/actions/customerActions";
 import Header from "../../components/Header";
@@ -32,11 +34,9 @@ const CustomerCreation = ({ createCustomer }) => {
       id.length > 8 ||
       fullName.length > 50 ||
       identifier.length > 20 ||
+      address.length > 50 ||
       contactNo.length > 15
     ) {
-      alert(
-        "Please make sure you have entered the correct number of characters in each field."
-      );
       return;
     }
 
@@ -115,6 +115,7 @@ const CustomerCreation = ({ createCustomer }) => {
             value={id}
             onChange={(e) => setName(e.target.value)}
             maxLength={8}
+            isMandatory={true}
           />
 
           <TextField
@@ -123,6 +124,7 @@ const CustomerCreation = ({ createCustomer }) => {
             value={fullName}
             onChange={(e) => setFullName(e.target.value)}
             maxLength={50}
+            isMandatory={true}
           />
 
           <TextField
@@ -131,6 +133,7 @@ const CustomerCreation = ({ createCustomer }) => {
             value={identifier}
             onChange={(e) => setIdentifier(e.target.value)}
             maxLength={20}
+            isMandatory={true}
           />
 
           <TextField
@@ -139,6 +142,7 @@ const CustomerCreation = ({ createCustomer }) => {
             value={address}
             onChange={(e) => setAddress(e.target.value)}
             maxLength={50}
+            isMandatory={true}
           />
 
           <TextField
@@ -146,7 +150,6 @@ const CustomerCreation = ({ createCustomer }) => {
             type="text"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            maxLength={50}
           />
 
           <TextField
@@ -155,6 +158,7 @@ const CustomerCreation = ({ createCustomer }) => {
             value={contactNo}
             onChange={(e) => setContactNo(e.target.value)}
             maxLength={15}
+            isMandatory={true}
           />
 
           <div

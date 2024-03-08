@@ -1,30 +1,6 @@
 {
   "customers": [
     {
-      "id": "123",
-      "fullName": "melly",
-      "identifier": "33232423",
-      "address": "colombo",
-      "email": "sdfsdf",
-      "contactNo": "231431"
-    },
-    {
-      "id": "123",
-      "fullName": "diana",
-      "identifier": "adwd",
-      "address": "dfdfffe",
-      "email": "sdaff",
-      "contactNo": "322131"
-    },
-    {
-      "id": "7890",
-      "fullName": "John",
-      "identifier": "123",
-      "address": "England",
-      "email": "wewrw",
-      "contactNo": "2313123"
-    },
-    {
       "id": "",
       "fullName": "",
       "identifier": "",
@@ -33,20 +9,20 @@
       "contactNo": ""
     },
     {
-      "id": "8907",
-      "fullName": "Morgana silva",
-      "identifier": "323",
-      "address": "England",
-      "email": "morgana@hotmail.com",
-      "contactNo": "2387890"
+      "id": "12312312",
+      "fullName": "hermayinee gringer",
+      "identifier": "222",
+      "address": "ds",
+      "email": "das@fv.gf",
+      "contactNo": "32"
     },
     {
-      "id": "2323",
-      "fullName": "harry potter",
-      "identifier": "32324324",
-      "address": "dfhgh",
-      "email": "gfgh@gmail.com",
-      "contactNo": "980"
+      "id": "21122121",
+      "fullName": "new testing",
+      "identifier": "223",
+      "address": "dfd",
+      "email": "dfg@fgh.fff",
+      "contactNo": "23"
     }
   ]
 }
