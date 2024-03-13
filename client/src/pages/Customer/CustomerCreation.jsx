@@ -116,6 +116,7 @@ const CustomerCreation = ({ createCustomer }) => {
             onChange={(e) => setName(e.target.value)}
             maxLength={8}
             isMandatory={true}
+            
           />
 
           <TextField

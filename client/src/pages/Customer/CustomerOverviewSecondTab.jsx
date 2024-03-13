@@ -3,6 +3,7 @@ import Header from "../../components/Header";
 import { Link } from "react-router-dom";
 import LeftSideNavBar from "../../components/LeftSideNavBar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import CreateReservations from "../Reservations/CreateReservations";
 import {
   faPlus,
   faSave,
@@ -87,6 +88,7 @@ function CustomerOverviewSecondTab() {
                 height: "30px",
               }}
             />
+            <Link to={`/CreateReservations`}>
             <FontAwesomeIcon
               icon={faPlus}
               style={{
@@ -96,6 +98,7 @@ function CustomerOverviewSecondTab() {
                 height: "20px",
               }}
             />
+            </Link>
             <FontAwesomeIcon
               icon={faSave}
               style={{

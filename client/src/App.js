@@ -6,7 +6,7 @@ import CustomerOverviewHistory from "./pages/Customer/CustomerOverviewHistory";
 import "bootstrap/dist/css/bootstrap.min.css";
 import CustomerOverviewGenaral from "./pages/Customer/CustomerOverviewGenaral";
 import CustomerOverviewSecondTab from "./pages/Customer/CustomerOverviewSecondTab";
-import CreateReservations from "./pages/Reservations/CreateReservationpage";
+import CreateReservations from "./pages/Reservations/CreateReservations";
 
 
 

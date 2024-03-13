@@ -45,30 +45,30 @@ const CreateReservations = () => {
             onChange={(e) => setName(e.target.value)}
           />
 
-          <div>
-            <label htmlFor="reservationGroup">Reservation Group:</label>
+          <div style={{ display: 'flex' }}>
+            <label htmlFor="reservationGroup" style={{ fontFamily: 'Roboto', width: '100px', marginRight: '60px' }}>Reservation Group:</label>
             <select
               id="reservationGroup"
               value={ResGroup}
               onChange={(e) => setResGroup(e.target.value)}
-              style={{ width: "100%", padding: "8px", marginTop: "5px", borderRadius: "5px", border: "1px solid #ccc" }}
+              style={{ height: '30px', width: '700px', borderRadius: '10px', backgroundColor: '#DFD8CF', borderColor: '#F0ECE8' }}
             >
-              <option value="">Select Group</option>
+              <option value=""></option>
               <option value="Group A">Group A</option>
               <option value="Group B">Group B</option>
               <option value="Group C">Group C</option>
             </select>
           </div>
 
-          <div>
-            <label htmlFor="reservationItem">Reservation Item:</label>
+          <div style={{ display: 'flex' }}>
+            <label htmlFor="reservationItem" style={{ fontFamily: 'Roboto', width: '100px', marginRight: '60px' }}>Reservation Item:</label>
             <select
               id="reservationItem"
               value={ResItem}
               onChange={(e) => setResItem(e.target.value)}
-              style={{ width: "100%", padding: "8px", marginTop: "5px", borderRadius: "5px", border: "1px solid #ccc" }}
+              style={{ height: '30px', width: '700px', borderRadius: '10px', backgroundColor: '#DFD8CF', borderColor: '#F0ECE8' }}
             >
-              <option value="">Select Item</option>
+              <option value=""></option>
               <option value="Item 1">Item 1</option>
               <option value="Item 2">Item 2</option>
               <option value="Item 3">Item 3</option>

@@ -80,6 +80,7 @@ function CustomerOverviewGeneral({
           padding: "17px",
           paddingBottom: "50px",
           marginTop: "24px",
+          width:"1020px",
           borderRadius: 10,
           border: "3px solid #B5A28C",
         }}
