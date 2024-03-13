@@ -10,6 +10,7 @@ import CustomerOverviewSecondTab from "./pages/Customer/CustomerOverviewSecondTa
 
 
 
+
 function App() {
 
   return (
@@ -20,6 +21,7 @@ function App() {
   <Route path="/CustomerOverviewGeneral/:id" element={<CustomerOverviewGenaral/>}></Route>
   <Route path="/CustomerOverviewSecondTab" element={<CustomerOverviewSecondTab/>}></Route>
   <Route path="/CustomerOverviewHistory" element={<CustomerOverviewHistory/>}></Route>
+ 
 </Routes>
 </BrowserRouter>
     );
